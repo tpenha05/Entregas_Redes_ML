@@ -2,6 +2,16 @@
 
 Esta atividade foi feita para testar suas habilidades em gerar datasets sintéticos, lidando com problemas de dados do mundo real, e preparar dados para serem alimentados a *redes neurais*.
 
+## Códigos
+
+Todos os códigos utilizados para fazer esse roteiro podem ser encontrados no repositório, cujo link está na home page desse site. Especificamente para essa entrega, o notebook usando para gerar gráficos e fazer transformações pode ser encontrado no path:
+
+```bash
+# File Location
+
+notebooks/entrega1/ex1.ipynb
+```
+
 ## Explorando a separabilidade de Dados em 2D
 
 ### Gerando os dados
@@ -26,7 +36,7 @@ Não seria possível separar as 4 classes com um simples limite linear.
 
 Baseado na análise realizada acima, uma possível separação para as classes seria: 
 
-![Separação](./desenho.png)
+![Separação](./desenho.PNG)
 /// caption
 Possível separação das classes
 ///
