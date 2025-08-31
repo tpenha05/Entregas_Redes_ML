@@ -1,10 +1,10 @@
 ## Objetivo
 
-Esta atividade foi feita para testar suas habilidades em gerar datasets sintéticos, lidando com problemas de dados do mundo real, e preparar dados para serem alimentados a *redes neurais*.
+Esta atividade foi feita para testar suas habilidades em gerar datasets sintéticos, lidando com problemas de dados do mundo real, e preparar dados para serem alimentados a **redes neurais**.
 
 ## Códigos
 
-Todos os códigos utilizados para fazer esse roteiro podem ser encontrados no repositório, cujo link está na home page desse site. Especificamente para essa entrega, o notebook usando para gerar gráficos e fazer transformações pode ser encontrado no path:
+Todos os códigos utilizados para fazer esse roteiro podem ser encontrados no repositório, cujo link está na home page desse site. Especificamente para essa entrega, o notebook usado para gerar gráficos e fazer as transformações descritas abaixo pode ser encontrado no path:
 
 ```bash
 # File Location
@@ -73,23 +73,23 @@ O dataset tem o objetivo de prever se um passageiro foi transportado para uma di
 
 - PassengerId: é o índice do dataset, valor único que separa os passageiros
 
-- HomePlanet: Dado *categórico*
+- HomePlanet: Dado **categórico**
 
-- CryoSleep: Valor booleano, logo *categórico*
+- CryoSleep: Valor booleano, logo **categórico**
 
 - Cabin: 
 
-- Destination: Valor *categórico*
+- Destination: Valor **categórico**
 
-- Age: Valor *numérico*
+- Age: Valor **numérico**
 
-- VIP: Valor booleano, logo *categórico*
+- VIP: Valor booleano, logo **categórico**
 
-- RoomService, FoodCourt, ShoppingMall, Spa, VRDeck: A quantidade que o passageiro gastou em cada um desses locais na embarcação, *numérico*
+- RoomService, FoodCourt, ShoppingMall, Spa, VRDeck: A quantidade que o passageiro gastou em cada um desses locais na embarcação, **numérico**
 
-- Name: Valor *categórico*
+- Name: Valor **categórico**
 
-- Transported : Valor booleano, logo *categórico*
+- Transported : Valor booleano, logo **categórico**
 
 #### Valores nulos
 
