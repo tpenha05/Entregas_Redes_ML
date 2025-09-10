@@ -18,12 +18,14 @@ notebooks/entrega2/ex.ipynb
 Foram criadas duas classes, cada uma com 1000 amostras e com os seguintes parâmetros: 
 
 - Class 0:
-    Média = [1.5,1.5],
-    Matriz de Covariância = [[0.5,0],[0,0.5]].
+    Média = $[1.5, 1.5]$,
+
+    Matriz de Covariância = $[[0.5, 0],[0, 0.5]]$.
 
 - Class 1:
-    Média = [5,5],
-    Matriz de Covariância = [[0.5,0],[0,0.5]].
+    Média = $[5, 5]$,
+
+    Matriz de Covariância = $[[0.5, 0],[0, 0.5]]$.
 
 #### Resultado 
 
@@ -34,7 +36,7 @@ Scatter Plot dos dados
 
 ### Implementando o Perceptron
 
-Foram inicializados o vetor de pesos ([0,0]), o valor de bias (0) e a taxa de aprendizagem (0.01). Além disso, foi feito as classes criadas anteriormente foram unidas verticalmente, de modo a criar a variável X (dados de treino), e foi criada uma matriz Y com 2000 valores (1000 zeros e 1000 uns), representando o target para o neurônio. 
+Foram inicializados o vetor de pesos ($[0, 0]$), o valor de bias (0) e a taxa de aprendizagem (0.01). Além disso, foi feito as classes criadas anteriormente foram unidas verticalmente, de modo a criar a variável X (dados de treino), e foi criada uma matriz Y com 2000 valores (1000 zeros e 1000 uns), representando o target para o neurônio. 
 
 Após esses processos, podemos começar o treinamento do neurônio, no qual tivemos uma duração de 100 epochs, utilizando early stopping, quando ele conseguisse classificar o dataset inteiro corretamente, 1 epoch sem erros. Durante o treinamento, o neurônio percorria o dataset, e sua previsão era baseada na seguinte expressão:
 ```python
@@ -56,7 +58,7 @@ Nesse caso, lr representando a taxa de aprendizado, e error sendo 1 ou -1 a depe
 
 Valores finais:
 
-- Matriz de pesos = [0.06650521,0.05172175]
+- Matriz de pesos = $[0.06650521, 0.05172175]$
 - Bias = -0.36000000000000015
 - Acurácia = 1.00
 
@@ -79,12 +81,14 @@ Evolução da acurácia pelas épocas
 Foram criadas duas classes, cada uma com 1000 amostras e com os seguintes parâmetros: 
 
 - Class 0:
-    Média = [3,3],
-    Matriz de Covariância = [[1.5,0],[0,1.5]].
+    Média = $[3, 3]$,
+
+    Matriz de Covariância = $[[1.5, 0], [0, 1.5]]$.
 
 - Class 1:
-    Média = [4,4],
-    Matriz de Covariância = [[1.5,0],[0,1.5]].
+    Média = $[4, 4]$,
+
+    Matriz de Covariância = $[[1.5, 0], [0, 1.5]]$.
 
 #### Resultado 
 
@@ -101,7 +105,7 @@ Para a implementação e treinamento do perceptron foi usado o mesmo procediment
 
 Valores finais:
 
-- Matriz de pesos = [0.04480969,0.04162641]
+- Matriz de pesos = $[0.04480969, 0.04162641]$
 - Bias = -0.09
 - Acurácia = 0.505
 
