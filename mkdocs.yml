@@ -72,7 +72,6 @@ markdown_extensions:
   - pymdownx.arithmatex:
       inline_wrap: ["$", "$"]
       block_wrap: ["$$", "$$"]
-      generic: true
   - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
