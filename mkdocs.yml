@@ -70,6 +70,8 @@ markdown_extensions:
   - md_in_html
   - markdown_grid_tables
   - pymdownx.arithmatex:
+      inline_wrap: ["$", "$"]
+      block_wrap: ["$$", "$$"]
       generic: true
   - pymdownx.details
   - pymdownx.highlight:
@@ -130,6 +132,7 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js
   - https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML
 
 nav:
   - Home: index.md

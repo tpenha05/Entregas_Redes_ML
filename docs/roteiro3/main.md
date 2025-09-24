@@ -9,7 +9,7 @@ Todos os códigos utilizados para fazer esse roteiro podem ser encontrados no re
 ```bash
 # File Location
 
-notebooks/entrega2/ex.ipynb
+notebooks/entrega3/ex1.ipynb
 ```
 
 ## Cálculos manuais dos passos de um MLP
