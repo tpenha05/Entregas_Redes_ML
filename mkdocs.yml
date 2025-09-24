@@ -69,9 +69,7 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - markdown_grid_tables
-  - pymdownx.arithmatex:
-      inline_wrap: ["$", "$"]
-      block_wrap: ["$$", "$$"]
+  - pymdownx.arithmatex
   - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
