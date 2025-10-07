@@ -210,3 +210,7 @@ No ambiente de desenvolvimento, testando com os dados de validação obtive o re
 ![Submissões no Kaggle](image-1.png)
 
 Fiz alguns experimentos para tentar melhorar o modelo, observa-se que o melhor resultado foi a penúltima submissão, entretanto ela estava com muito over-fitting, o gráfico de aprendizagem mostrava que a loss do treino caía, mas a loss de validação continuava subindo.
+
+Todos os códigos mencionados nesse relatório podem ser encontrados em:
+
+[Arquivo de Desenvolvimento no GitHub](https://github.com/tpenha05/Entregas_Redes_ML/blob/main/notebooks/project1/project1.ipynb)
