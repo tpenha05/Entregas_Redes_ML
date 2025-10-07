@@ -15,7 +15,7 @@ notebooks/entrega3/ex1.ipynb
 # Cálculos manuais dos passos de um MLP
 
 * **Vetores de Input e Output**
-  x = [0.5, -0.2]
+  x =  [0.5, -0.2]
   y = 1.0
 
 * **Pesos da camada oculta**
