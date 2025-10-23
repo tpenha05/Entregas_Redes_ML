@@ -78,15 +78,12 @@ A função de perda combina:
 1. **Binary Cross-Entropy (BCE):** mede a qualidade da reconstrução das imagens.
 2. **Kullback-Leibler Divergence (KLD):** regulariza o espaço latente para aproximar uma distribuição normal padrão.
 
-A função total de perda é dada por:
-[
-\mathcal{L} = \text{BCE} + \text{KLD}
-]
+A função total de perda é dada por: L = BCE + KLD.
+
 Durante o treinamento, as perdas médias (total, BCE e KLD) são impressas a cada época.
 
 Após cada época:
 
-* O modelo é salvo em `./checkpoints`;
 * Amostras reconstruídas e novas amostras do espaço latente são salvas nas pastas `./reconstructions` e `./samples`, respectivamente.
 
 ---
@@ -110,7 +107,7 @@ Essas imagens permitem verificar a capacidade do modelo em aprender a estrutura 
 Para interpretar o espaço latente de dimensão 40, aplicou-se o método **PCA (Principal Component Analysis)**, reduzindo-o para 2 dimensões.
 O resultado é visualizado em um gráfico de dispersão, onde cada ponto representa uma imagem do conjunto de validação, colorido conforme sua classe verdadeira (0–9).
 
-![Plottando o espaço latente](../../plots/latent_pca.png)
+![Plottando o espaço latente](./latent_pca.png)
 /// caption
 Plot do espaço latente após a realização de um PCA.
 ///
@@ -126,14 +123,14 @@ Esse tipo de visualização permite observar como o VAE organizou semanticamente
 * A **qualidade das amostras geradas** melhora progressivamente, demonstrando que o espaço latente se torna mais estruturado com o treinamento.
 * A redução via PCA mostrou **agrupamentos visíveis** entre classes semelhantes (por exemplo, 9 e 4 próximos, 0 e 6 próximos).
 
-![Reconstrução gerada pelo VAE](../../reconstructions/recon_epoch45.png)
+![Reconstrução gerada pelo VAE](./reconstructions/recon_epoch45.png)
 /// caption
 Reconstruções feitas pelo modelo, a partir de exemplos presentes no dataset.
 ///
 
 Na imagem acima, a linha de cima representa a imagem original no dataset, e a imagem abaixo representa a reconstrução do que o modelo construiu.
 
-![Samples gerada pelo VAE](../../samples/samples_epoch49.png)
+![Samples gerada pelo VAE](./samples/samples_epoch49.png)
 /// caption
 Construção de samples a partir de distribuições aleatórias.
 ///
