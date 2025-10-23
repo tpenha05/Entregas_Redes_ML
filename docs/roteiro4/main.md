@@ -56,11 +56,7 @@ A função de ativação utilizada é **ReLU**.
 
 ### Reparametrization Trick
 
-O código implementa o truque de reparametrização conforme:
-[
-z = \mu + \sigma \cdot \epsilon, \quad \epsilon \sim \mathcal{N}(0, I)
-]
-Isso permite que o gradiente flua através de `μ` e `σ` durante o treinamento, essencial para o aprendizado estável do VAE.
+O código implementa o truque de reparametrização conforme: z = μ + σ · ε,  ε ~ N(0, I). Isso permite que o gradiente flua através de μ e σ durante o treinamento, essencial para o aprendizado estável do VAE.
 
 ### Estrutura do Decoder
 
