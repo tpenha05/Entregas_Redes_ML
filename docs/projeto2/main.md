@@ -21,7 +21,7 @@ O dataset utilizado foi o **Road Accident Risk Dataset**, composto por dados rel
 
 ---
 
-## 📘 2. Descrição do Dataset
+## 2. Descrição do Dataset
 
 O dataset contém informações como:
 
