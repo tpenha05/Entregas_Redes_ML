@@ -45,21 +45,21 @@ A correlação foi visualizada com um **heatmap** (`sns.heatmap(corr, cmap='cool
 
 ### Etapas realizadas:
 
-1. **Normalização:**
+- **Normalização:**
 
    * Aplicou-se `MinMaxScaler()` às variáveis numéricas para restringi-las ao intervalo [0, 1].
    * Isso melhora a estabilidade do treinamento da MLP, pois evita dominância de atributos com escalas maiores.
 
-2. **Codificação categórica:**
+- **Codificação categórica:**
 
    * Usou-se `OneHotEncoder(handle_unknown='ignore', sparse_output=False)` para transformar variáveis como `road_type`, `lighting`, `weather`, `time_of_day`.
    * Após a codificação, o dataset foi concatenado com as novas colunas (`pd.concat`).
 
-3. **Conversão de booleanos:**
+- **Conversão de booleanos:**
 
    * Colunas booleanas foram convertidas para inteiros (`0/1`) para compatibilidade com o modelo PyTorch.
 
-4. **Tratamento de inconsistências:**
+- **Tratamento de inconsistências:**
 
    * Foram removidas colunas não informativas como `id`.
 
@@ -151,13 +151,12 @@ O modelo alcançou **convergência estável**, sem explosões ou gradientes inst
 
 Para avaliação quantitativa, foram usadas métricas de regressão:
 
-| Métrica                      | Fórmula                            | Interpretação                          |   |                     |
-| ---------------------------- | ---------------------------------- | -------------------------------------- | - | ------------------- |
-| **MSE** (Mean Squared Error) | ( \frac{1}{n}\sum(y - \hat{y})^2 ) | Penaliza grandes erros                 |   |                     |
-| **RMSE**                     | ( \sqrt{MSE} )                     | Erro médio na mesma escala da variável |   |                     |
-| **MAE**                      | ( \frac{1}{n}\sum                  | y - \hat{y}                            | ) | Erro médio absoluto |
-| **R²**                       | ( 1 - \frac{SS_{res}}{SS_{tot}} )  | Proporção da variância explicada       |   |                     |
-
+| **Métrica** | **Fórmula** | **Interpretação** |
+|--------------|-------------|-------------------|
+| **MSE** (Mean Squared Error) | (1/n) Σ (y − ŷ)² | Penaliza grandes erros |
+| **RMSE** | √(MSE) | Erro médio na mesma escala da variável |
+| **MAE** | (1/n) Σ |y − ŷ| | Erro médio absoluto |
+| **R²** | 1 − (SS₍res₎ / SS₍tot₎) | Proporção da variância explicada |
 Resultados esperados (exemplo ilustrativo):
 
 | Métrica | Valor |
