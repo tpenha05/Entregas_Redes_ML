@@ -123,14 +123,14 @@ Esse tipo de visualização permite observar como o VAE organizou semanticamente
 * A **qualidade das amostras geradas** melhora progressivamente, demonstrando que o espaço latente se torna mais estruturado com o treinamento.
 * A redução via PCA mostrou **agrupamentos visíveis** entre classes semelhantes (por exemplo, 9 e 4 próximos, 0 e 6 próximos).
 
-![Reconstrução gerada pelo VAE](./reconstructions/recon_epoch45.png)
+![Reconstrução gerada pelo VAE](./recon_epoch45.png)
 /// caption
 Reconstruções feitas pelo modelo, a partir de exemplos presentes no dataset.
 ///
 
 Na imagem acima, a linha de cima representa a imagem original no dataset, e a imagem abaixo representa a reconstrução do que o modelo construiu.
 
-![Samples gerada pelo VAE](./samples/samples_epoch49.png)
+![Samples gerada pelo VAE](./samples_epoch49.png)
 /// caption
 Construção de samples a partir de distribuições aleatórias.
 ///
