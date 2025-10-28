@@ -1,5 +1,5 @@
 site_name: Relatórios de Redes Neurais
-site_author: Sandmann, H.
+site_author: Thiago Penha
 site_url: https://tpenha05.github.io/Entregas_Redes_ML
 repo_url: https://github.com/tpenha05/Entregas_Redes_ML
 repo_name: github/documentation.template
@@ -110,7 +110,7 @@ plugins:
       enable_creation_date: true
   - git-authors
   - git-committers:
-      repository: hsandmann/hsandmann.github.com
+      repository: tpenha05/Entregas_Redes_ML
       branch: main
   - search
   - badges
